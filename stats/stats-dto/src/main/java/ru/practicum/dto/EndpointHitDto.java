@@ -13,6 +13,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class EndpointHitDto {
+
+    private Long id;
     @NotBlank(message = "App не может быть пустым")
     private String app;
     @NotBlank(message = "Uri не может быть пустым")
@@ -21,6 +23,6 @@ public class EndpointHitDto {
     private String ip;
     @Past(message = "Timestamp не может быть в будущем")
     @NotNull(message = "Timestamp не может быть пустым")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime timestamp;
 }

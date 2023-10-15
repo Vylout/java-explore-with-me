@@ -1,4 +1,4 @@
-package ru.practicum.stats_server.model;
+package ru.practicum.model;
 
 import lombok.*;
 
@@ -21,7 +21,7 @@ public class EndpointHit {
     private String app;
     @Column(name = "uri", nullable = false)
     private String uri;
-    @Column(name = "ip", nullable = false, length = 30)
+    @Column(name = "ip", nullable = false)
     private String ip;
     @Column(name = "created", nullable = false)
     private LocalDateTime timestamp;
