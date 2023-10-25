@@ -13,16 +13,15 @@ import java.time.LocalDateTime;
 @Table(name = "hits")
 public class EndpointHit {
     @Id
-    @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "app", nullable = false)
+    @Column(name = "app")
     private String app;
-    @Column(name = "uri", nullable = false)
+    @Column(name = "uri")
     private String uri;
-    @Column(name = "ip", nullable = false)
+    @Column(name = "ip")
     private String ip;
-    @Column(name = "created", nullable = false)
+    @Column(name = "created")
     private LocalDateTime timestamp;
 }

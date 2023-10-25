@@ -24,5 +24,5 @@ public class EndpointHitDto {
     @Past(message = "Timestamp не может быть в будущем")
     @NotNull(message = "Timestamp не может быть пустым")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime timestamp;
+    private String timestamp;
 }
