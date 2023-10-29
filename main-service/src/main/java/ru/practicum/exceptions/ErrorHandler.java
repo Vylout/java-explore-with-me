@@ -3,6 +3,7 @@ package ru.practicum.exceptions;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.NestedExceptionUtils;
 import org.springframework.dao.NonTransientDataAccessException;
+import org.springframework.validation.beanvalidation.MethodValidationInterceptor;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
