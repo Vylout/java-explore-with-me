@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "a8d99dd3-f132-4320-9a4b-037bcd0f5eef",
     "name": "feature",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "27016390"
   },
   "item": [
@@ -71,7 +71,18 @@
                 }
               }
             },
-            "url": "http://localhost:8080/admin/users"
+            "url": {
+              "raw": "http://localhost:8080/admin/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "admin",
+                "users"
+              ]
+            }
           },
           "response": []
         },
@@ -251,7 +262,21 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/users/1/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -294,7 +319,21 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/users/1/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -337,7 +376,21 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/users/1/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -365,7 +418,19 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "http://localhost:8080/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -396,7 +461,20 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/comments/1"
+            "url": {
+              "raw": "http://localhost:8080/users/1/comments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "comments",
+                "1"
+              ]
+            }
           },
           "response": []
         },
@@ -418,7 +496,20 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "http://localhost:8080/users/1/comments/2"
+            "url": {
+              "raw": "http://localhost:8080/users/1/comments/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "comments",
+                "2"
+              ]
+            }
           },
           "response": []
         },
@@ -451,7 +542,19 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "http://localhost:8080/admin/comments/1"
+            "url": {
+              "raw": "http://localhost:8080/admin/comments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "admin",
+                "comments",
+                "1"
+              ]
+            }
           },
           "response": []
         },
@@ -473,7 +576,19 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "http://localhost:8080/admin/comments/3"
+            "url": {
+              "raw": "http://localhost:8080/admin/comments/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "admin",
+                "comments",
+                "3"
+              ]
+            }
           },
           "response": []
         },
@@ -501,7 +616,19 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "http://localhost:8080/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -527,7 +654,20 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "http://localhost:8080/events/1/comments/count"
+            "url": {
+              "raw": "http://localhost:8080/events/1/comments/count",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "events",
+                "1",
+                "comments",
+                "count"
+              ]
+            }
           },
           "response": []
         },
@@ -549,7 +689,21 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "http://localhost:8080/users/2/comments/1/like"
+            "url": {
+              "raw": "http://localhost:8080/users/2/comments/1/like",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "2",
+                "comments",
+                "1",
+                "like"
+              ]
+            }
           },
           "response": []
         },
@@ -571,7 +725,21 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "http://localhost:8080/users/2/comments/1/dislike"
+            "url": {
+              "raw": "http://localhost:8080/users/2/comments/1/dislike",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "2",
+                "comments",
+                "1",
+                "dislike"
+              ]
+            }
           },
           "response": []
         }
@@ -598,7 +766,21 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "http://localhost:8080/users/2/comments/1/like"
+            "url": {
+              "raw": "http://localhost:8080/users/2/comments/1/like",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "2",
+                "comments",
+                "1",
+                "like"
+              ]
+            }
           },
           "response": []
         },
@@ -620,7 +802,21 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "http://localhost:8080/users/2/comments/1/like"
+            "url": {
+              "raw": "http://localhost:8080/users/2/comments/1/like",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "2",
+                "comments",
+                "1",
+                "like"
+              ]
+            }
           },
           "response": []
         },
@@ -642,7 +838,21 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "http://localhost:8080/users/1/comments/1/like"
+            "url": {
+              "raw": "http://localhost:8080/users/1/comments/1/like",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "comments",
+                "1",
+                "like"
+              ]
+            }
           },
           "response": []
         },
@@ -664,7 +874,20 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "http://localhost:8080/users/3/comments/1"
+            "url": {
+              "raw": "http://localhost:8080/users/3/comments/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "3",
+                "comments",
+                "1"
+              ]
+            }
           },
           "response": []
         },
@@ -695,7 +918,21 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/9999/events/1/comments"
+            "url": {
+              "raw": "http://localhost:8080/users/9999/events/1/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "9999",
+                "events",
+                "1",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -706,8 +943,8 @@
               "listen": "test",
               "script": {
                 "exec": [
-                  "pm.test(\"Ответ должен содержать код статуса 400\", function () {",
-                  "    pm.response.to.have.status(400);",
+                  "pm.test(\"Ответ должен содержать код статуса 404\", function () {",
+                  "    pm.response.to.have.status(404);",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -726,7 +963,21 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/events/9999/comments"
+            "url": {
+              "raw": "http://localhost:8080/users/1/events/9999/comments",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "events",
+                "9999",
+                "comments"
+              ]
+            }
           },
           "response": []
         },
@@ -757,7 +1008,20 @@
                 }
               }
             },
-            "url": "http://localhost:8080/users/1/comments/9999"
+            "url": {
+              "raw": "http://localhost:8080/users/1/comments/9999",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "comments",
+                "9999"
+              ]
+            }
           },
           "response": []
         },
@@ -779,7 +1043,20 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "http://localhost:8080/users/1/comments/9999"
+            "url": {
+              "raw": "http://localhost:8080/users/1/comments/9999",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users",
+                "1",
+                "comments",
+                "9999"
+              ]
+            }
           },
           "response": []
         }
