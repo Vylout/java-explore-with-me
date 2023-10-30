@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ServerWebInputException;
 
+import javax.validation.ConstraintViolationException;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
@@ -69,6 +70,20 @@ public class ErrorHandler {
     @ExceptionHandler
     @ResponseStatus(BAD_REQUEST)
     public ApiError handleValidationException(ValidationRequestException e) {
+        return ApiError.builder()
+                .errors(Arrays.stream(e.getStackTrace())
+                        .map(StackTraceElement::toString)
+                        .collect(Collectors.toList()))
+                .status(BAD_REQUEST)
+                .reason("Incorrectly made request.")
+                .message(e.getMessage())
+                .timestamp(LocalDateTime.now())
+                .build();
+    }
+
+    @ExceptionHandler({ConstraintViolationException.class})
+    @ResponseStatus(BAD_REQUEST)
+    public ApiError handleConstraintViolationException(ConstraintViolationException e) {
         return ApiError.builder()
                 .errors(Arrays.stream(e.getStackTrace())
                         .map(StackTraceElement::toString)

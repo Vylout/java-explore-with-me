@@ -47,6 +47,15 @@ public class EventServiceImpl implements EventService {
     private final StatsClient statsClient;
 
     @Override
+    public void eventExists(Long eventId) {
+        log.info("Checking that event with id={} exists", eventId);
+
+        if (!eventRepository.existsById(eventId)) {
+            throw new NotFoundException("Event", eventId);
+        }
+    }
+
+    @Override
     @Transactional
     public EventFullDto createEvent(Long userId, NewEventDto newEventDto) {
         Event event = EventMapper.toEvent(newEventDto);
